@@ -115,7 +115,7 @@ def RunThis(searchString):
                 print(e)
                 print('Some Unknown Exceptions Occurred.....')
                 break
-            while counter<10:
+            while counter<15:
                 prev_url=urls
                 try:
                     extractData=requests.get(urls)
