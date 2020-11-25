@@ -60,7 +60,7 @@ def RunThis(searchString):
         If we can load more reviews
         Then Extract as we would.
     """
-    for url in product_url[:4]:
+    for url in product_url[:2]:
         html_url=requests.get(url)
         print("Hitting: "+url+'\n')
         data_url=BeautifulSoup(html_url.content,'html.parser')
@@ -115,7 +115,7 @@ def RunThis(searchString):
                 print(e)
                 print('Some Unknown Exceptions Occurred.....')
                 break
-            while counter<15:
+            while counter<20:
                 prev_url=urls
                 try:
                     extractData=requests.get(urls)
