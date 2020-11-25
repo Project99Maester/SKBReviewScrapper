@@ -1,0 +1,3 @@
+FLASK_ENV=developement
+FLASK_APP=webscrapper
+FLASK_DEBUG=1

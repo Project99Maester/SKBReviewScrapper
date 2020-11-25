@@ -1,0 +1,42 @@
+{% extends "Base.html"%}
+
+{% block content %}
+<form action="\results" method="post" id="form">
+    
+    <div class="row align-items-center"></div>
+    <div id="loading" style="display:none;"><img src="{{ url_for('static', filename='loading.gif') }}" alt="" />Loading!</div>
+        <div class="column">
+            <input type="text" name="searchString" placeholder="Enter the Search String" id="searchString" class="form-control form-control-lg" >
+        </div>
+        <br>
+        <div class="column">
+            <input id="submit" type="submit" class="btn btn-primary" value="Search" onclick="$('#loading').show();">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div id="loading2" style="display:none;"><img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='Magnify-1s-200px1.gif') }}" alt="" style="background-image: url(https://thumbs.dreamstime.com/z/copy-tab-line-icon-vector-isolated-white-background-infographic-website-app-blue-designed-grid-system-100293332.jpg) ; background-repeat: repeat; background-size: cover ;"/></div>
+        </div>
+    </div>
+    
+</form>
+
+<script type="text/javascript">
+    (function (d) {
+      d.getElementById('form').onsubmit = function () {
+        // d.getElementById('submit').style.display = 'block';
+        d.getElementById('loading2').style.display = 'block';
+        // d.getElementById('loading').style.dispaly='block';
+      };
+    }(document));
+    </script>
+{% endblock %}
