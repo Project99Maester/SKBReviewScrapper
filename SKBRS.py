@@ -7,8 +7,8 @@ def RunThis(searchString):
     First Connect DB and Check it 
     """
     
-    dbConn=pymongo.MongoClient("mongodb://localhost:27017/")
-    dbName='crawlerDB'
+    dbConn=pymongo.MongoClient("mongodb+srv://kPLjf1xsFBcEpyQu:kPLjf1xsFBcEpyQu@db.yqjqw.mongodb.net/SKBRSDB?retryWrites=true&w=majority")
+    dbName='SKBRSDB'
     db=dbConn[dbName]
     collection_name=searchString.replace(" ","")
     collection=db[collection_name]
