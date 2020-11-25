@@ -60,7 +60,7 @@ def RunThis(searchString):
         If we can load more reviews
         Then Extract as we would.
     """
-    for url in product_url[:20]:
+    for url in product_url[:2]:
         html_url=requests.get(url)
         print("Hitting: "+url+'\n')
         data_url=BeautifulSoup(html_url.content,'html.parser')
